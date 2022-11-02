@@ -51,7 +51,7 @@ table {
     width: 100%;
     margin: 0 auto;
 }
-header {
+.header-flex {
     height: 76px;
     display: flex;
     align-items: center;
@@ -66,7 +66,7 @@ header {
     align-items: center;
     justify-content: flex-start;
 }
-header a {
+.header-flex a {
     text-decoration: none;
     margin-right: 35px;
     font-weight: 500;
@@ -98,7 +98,7 @@ header a {
     height: 574px;
     display: inline-block;
 }
-.header-main {
+.main-flex {
     width: 100%;
     height: 500px;
     margin-top: 28px;
@@ -173,11 +173,11 @@ header a {
 .header-main__thirdshape {
     position: absolute;
     top: 39px;
-    left: 1162px;
+    left: 1150px;
 }
 .header-main__fourthshape {
     position: absolute;
-    right: 33px;
+    left: 1180px;
     bottom: -70px;
 }
 
@@ -199,6 +199,12 @@ header a {
     margin-left: 40px;
 }
 /* END - HEADER AND MAIN */
+
+/* START - MEDIA FOR HEADER AND MAIN */
+
+
+
+
 
 
 .our-team {
