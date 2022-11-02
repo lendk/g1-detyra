@@ -318,3 +318,72 @@ header a {
     line-height: 20px;
     color: #532C59;
 }
+
+/* SEKTORI TESTIMONIALS */
+
+.test{
+    max-width: 1190px;
+}
+
+.Testimonials{
+    margin-top: 60px;
+    height: 1000px;
+}
+
+.Testimonials__title{
+    text-align: center;
+    font-family: 'Syne';
+    font-weight: 700;
+    font-size: 48px;
+    padding-bottom: 70px;
+}
+
+.Testimonials__tweets{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+    align-items: flex-start;
+    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
+    mask-image: initial;
+}
+
+.tweet-wrapper {
+    border: 1px solid #D6BCFA;
+    border-radius: 10px;
+    height: auto;
+    padding: 24px; 
+}
+
+.tweet__profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.tweet__username {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-size: 16px;
+    color: #000000;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.tweet__username h4 {
+font-weight: 550;
+letter-spacing: .5px;
+}
+
+.tweet__username p{
+font-weight: 400;
+opacity: 0.5;
+}
+
+.tweet__content p {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #532C59;
+}
