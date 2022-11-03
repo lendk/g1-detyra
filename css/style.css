@@ -328,7 +328,7 @@ table {
 /* SEKTORI TESTIMONIALS */
 
 .test{
-    max-width: 1300px;
+    max-width: 1280px;
 }
 
 .Testimonials{
@@ -413,7 +413,7 @@ table {
 }
 
 .frequent-title h1 {
-    padding-right: 40px;
+    padding-right: 20px;
 }
 
 .questions__wrapper {
@@ -471,6 +471,9 @@ table {
 
 /* RESPONSIVE DESIGN */
 @media (max-width:767px) {
+    /* SEKTORI TESTIMONIALS */
+
+
 
     /* SEKTORI QUESTIONNAIRES */
     .frequent-title h1 {
