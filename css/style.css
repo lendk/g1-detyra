@@ -76,7 +76,7 @@ table {
     opacity: 0.5;
 }
 .secondlist {
-    width: 315px;
+    width: 330px;
     height: 44px;
     margin-right: 70px;
     display: flex;
@@ -85,6 +85,7 @@ table {
 }
 .secondlist__link {
     text-decoration: none;
+    width: 102px;
 }
 .secondlist__link--arrow:after {
     content: "";
@@ -197,6 +198,9 @@ table {
 }
 .ispum1 {
     margin-left: 40px;
+}
+body {
+    background-size: 100%;
 }
 /* END - HEADER AND MAIN */
 
