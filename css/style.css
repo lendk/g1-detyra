@@ -454,3 +454,14 @@ table {
 .questions__wrapper p{
     font-size: 14px;
 }
+.lastpage{
+    height: 446px;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    top: 80px;
+    border-radius: 60px;
+    border: 1px solid #D6BCFA;
+    box-shadow: inset 0px 0px 50px #F8E0FA;
+
+}
