@@ -228,12 +228,6 @@ table {
 /* END - HEADER AND MAIN */
 
 /* START - MEDIA FOR HEADER AND MAIN */
-
-
-
-
-
-
 .our-team {
     display: flex;
     flex-direction: column;
@@ -252,7 +246,7 @@ table {
     align-items: center;
     padding: 0 110px 20px 110px;
 }
-.our-team__title{
+.our-team__title, .we-provide__title{
     font-family: 'Syne';
     font-style: normal;
     font-weight: 700;
@@ -263,8 +257,7 @@ table {
     margin-bottom: 24px;
 }
 
-.our-team__desc {
-    display: flex;
+.our-team__desc, .we-provide__desc p{
     align-items: center;
     font-family: 'Space Grotesk';
     font-style: normal;
@@ -277,7 +270,6 @@ table {
 }
 .our-team__name{
     width: 100%;
-    padding: 20px;
     display: flex;
     flex-direction: row;
     font-family: 'Space Grotesk';
@@ -289,6 +281,9 @@ table {
     color: #000000;
     margin-bottom: 12px;
 }
+.tmp{
+    padding: 20px;
+}
 .our-team__position{
     font-family: 'Space Grotesk';
     font-style: normal;
@@ -299,57 +294,51 @@ table {
     color: #532C59;
 
 }
-/* SECOND PART*/
+
+/*SEKTORI WE-PROVIDE */
+
 .we-provide {
-    display: flex;
-    
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 80px;
+    height: auto;
+}
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.we-provide__icons {
-    display: flex;
-    gap: 32px;
+.info__kolona {
+    width: 301px;
+    padding: 16px;
 }
 
-.we-provide__icon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 110px 20px 110px;
+.info__paragraph {
+    width: 269px;
 }
-.we-provide__title{
-    font-family: 'Syne';
+
+.info__paragraph p {
+font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 20px;
+color: #532C59;
+text-align: center;
+}
+
+.info__header{
+    font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 64px;
-    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
     color: #000000;
-   margin-bottom: 24px;
+    margin-bottom: 12px;
+    text-align: center;
 }
 
-.we-provide__desc {
-    display: flex;
-    align-items: center;
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: #532C59;
-    margin-bottom: 40px;
-}
-.we-provide__position{
-    width: 50%;
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    color: #532C59;
+.info__image {
+display: flex;
+justify-content: center;
 }
 
 /* SEKTORI TESTIMONIALS */
@@ -521,3 +510,4 @@ table {
         width: auto;
     }
 }
+
