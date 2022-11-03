@@ -328,12 +328,12 @@ table {
 /* SEKTORI TESTIMONIALS */
 
 .test{
-    max-width: 1300px;
+    max-width: 1280px;
 }
 
 .Testimonials{
     margin-top: 60px;
-    height: 870px;
+    height: auto;
 }
 
 .Testimonials__title{
@@ -394,7 +394,8 @@ table {
 /* SEKTORI QUESTIONNAIRES */
 
 .questionnaires {
-    height: 600px;
+    margin-top: 70px;
+    height: auto;
 }
 
 .questionnaires__content {
@@ -451,10 +452,11 @@ table {
     cursor: pointer;
 }
 
-.questions__wrapper p{
+.questions__wrapper p {
     font-size: 14px;
 }
-.lastpage{
+
+.lastpage {
     height: 446px;
     max-width: 1300px;
     width: 100%;
@@ -464,4 +466,26 @@ table {
     border: 1px solid #D6BCFA;
     box-shadow: inset 0px 0px 50px #F8E0FA;
 
+}
+
+@media (max-width:767px) {
+
+    /* SEKTORI QUESTIONNAIRES */
+    .frequent-title h1{
+        text-align: center;
+    }
+    .questions__frequent p{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .questionnaires__content{
+        grid-template-columns: 1fr;
+    }
+    .questions__wrapper{
+        width: auto;
+    }
 }
