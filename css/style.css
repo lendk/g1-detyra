@@ -328,12 +328,12 @@ table {
 /* SEKTORI TESTIMONIALS */
 
 .test{
-    max-width: 1190px;
+    max-width: 1300px;
 }
 
 .Testimonials{
     margin-top: 60px;
-    height: 1000px;
+    height: 870px;
 }
 
 .Testimonials__title{
@@ -347,23 +347,20 @@ table {
 .Testimonials__tweets{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 30px;
-    column-gap: 30px;
-    align-items: flex-start;
-    -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1), transparent);
+    grid-column-gap: 30px;
+    -webkit-mask-image: linear-gradient(white,transparent);
     mask-image: initial;
 }
 
 .tweet-wrapper {
     border: 1px solid #D6BCFA;
     border-radius: 10px;
-    height: auto;
-    padding: 24px; 
+    padding: 24px;
+    margin-bottom: 24px;
 }
 
 .tweet__profile {
     display: flex;
-    flex-direction: row;
 }
 
 .tweet__username {
@@ -376,20 +373,84 @@ table {
 }
 
 .tweet__username h4 {
-font-weight: 550;
-letter-spacing: .5px;
+    font-weight: 550;
+    letter-spacing: .5px;
 }
 
 .tweet__username p{
-font-weight: 400;
-opacity: 0.5;
+    font-weight: 400;
+    opacity: 0.5;
 }
 
-.tweet__content p {
+.tweet__content p, .questions__frequent p, .questions__wrapper p {
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #532C59;
+}
+
+/* SEKTORI QUESTIONNAIRES */
+
+.questionnaires {
+    height: 600px;
+}
+
+.questionnaires__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 32px;
+}
+
+.questions__frequent h1 {
+    padding-bottom: 20px;
+    font-family: 'Syne';
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 64px;
+}
+
+.frequent-title h1 {
+    padding-right: 40px;
+}
+
+.questions__wrapper {
+    border: 1px solid #D6BCFA;
+    border-radius: 15px;
+    width: 410px;
+    height: auto;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.questions__wrapper h4 {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    opacity: 0.8;
+    
+}
+
+.questions__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.questions__content img {
+    padding-left: 30px;
+}
+
+.questions__content img:hover {
+    transform: rotateX(180deg);
+    cursor: pointer;
+}
+
+.questions__wrapper p{
+    font-size: 14px;
 }
