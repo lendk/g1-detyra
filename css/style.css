@@ -577,7 +577,7 @@ justify-content: center;
         margin-left: 15px;
     }
     .header__logo {
-        margin-left: -200px;
+        margin-left: -190px;
     }
     .main-flex {
         height: 400px;
@@ -595,8 +595,9 @@ justify-content: center;
         bottom: 0;
     }
     .content {
-        width: 400px;
+        width: 350px;
         margin: 0;
+        margin-left: 35px;
     }
     .content-text {
         width: 400px;
@@ -628,13 +629,13 @@ justify-content: center;
     .header-main__thirdshape {
         width: 65px;
         height: 67px;
-        left: 320px;
+        left: 350px;
         top: 5px;
     }
     .header-main__fourthshape {
         width: 105px;
         height: 105px;
-        left: 308px;
+        left: 345px;
         top: 280px;
     }
     .all-logos {
@@ -646,7 +647,7 @@ justify-content: center;
     .logos-second {
         width: 350px;
         height: 30px;
-        margin-left: 30px;
+        margin-left: 40px;
     }
     .logos img,
     .logos-second img {
