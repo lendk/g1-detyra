@@ -239,12 +239,14 @@ table {
    body {
     max-width: 1440px;
    }
-   .firstlist {
-    visibility: hidden;
-   }
+   /* .main-flex {
+    overflow: hidden;
+   } */
+   .firstlist,
    .secondlist {
     visibility: hidden;
    }
+   
    .hamburger {
     visibility: visible;
    }
@@ -305,6 +307,7 @@ table {
         height: 20px;
     }
 }
+
 
 
 
@@ -569,8 +572,95 @@ justify-content: center;
 
 /* RESPONSIVE DESIGN */
 @media (max-width:767px) {
-    /* SEKTORI TESTIMONIALS */
+    /* START-HEADER-MAIN */
+    .firstlist,
+    .secondlist {
+        visibility: hidden;
+    }
+    .hamburger {
+        visibility: visible;
+        margin-left: 15px;
+    }
+    .header__logo {
+        margin-left: -200px;
+    }
+    .main-flex {
+        height: 400px;
+    }
+    .header-main__firstshape {
+        width: 113px;
+        height: 114px;
+        top: 80px;
+        left: -50px;
+    }
+    .header-main__secondshape {
+        width: 122px;
+        height: 123px;
+        left: -29px;
+        bottom: 0;
+    }
+    .content {
+        width: 400px;
+        margin: 0;
+    }
+    .content-text {
+        width: 400px;
+    }
+    .content-text__title {
+        width: 230px;
+        height: 165px;
+        font-size: 40px;
+        line-height: 56px;
+        margin-left: -20px;
+        text-align: center;
+    }    
+    .content-text__text {
+        width: 290px;
+        height: 95px;
+        font-size: 11px;
+        line-height: 23px;
+        margin-top: 10px;
+    }
+    .btn {
+        font-size: 13px;
+        width: 107px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -50px;
+    }
+    .header-main__thirdshape {
+        width: 65px;
+        height: 67px;
+        left: 320px;
+        top: 5px;
+    }
+    .header-main__fourthshape {
+        width: 105px;
+        height: 105px;
+        left: 308px;
+        top: 280px;
+    }
+    .all-logos {
+        width: 390px;
+        flex-direction: column;
+        margin-top: -180px;
+    }
+    .logos,
+    .logos-second {
+        width: 350px;
+        height: 30px;
+        margin-left: 30px;
+    }
+    .logos img,
+    .logos-second img {
+        width: 90px;
+        height: 28px;
+    }
+     /* END-HEADER-MAIN */
 
+    /* SEKTORI TESTIMONIALS */
 
 
     /* SEKTORI QUESTIONNAIRES */
