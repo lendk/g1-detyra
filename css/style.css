@@ -859,16 +859,24 @@ justify-content: center;
     }
    .info{
     grid-template-columns: 1fr;
+    margin-top: -30px;
    }
    .info__kolona{
     margin-left:40px;
    }
    .we-provide__desc p{
-margin-bottom: 20px;
+   text-align: center;
    }
+   .we-provide__desc {
+    width: 400px;
+    text-align: center;
+    margin-top: 20px;
+   }
+
    /* SEKTORI OUR TEAM*/ 
    .our-team__icons{
     grid-template-columns: 1fr 1fr;  
+    margin-right: -20px;
     }
     .our-team__icon{
         margin-right: 0;
@@ -880,15 +888,19 @@ margin-bottom: 20px;
     .our-team__position{
         margin-bottom: 10px;
     }
-
+    .our-team__desc{
+    width: 400px;
+    text-align: center;
+    margin-top: 20px;
+    }
 
     /* SEKTORI TESTIMONIALS */
     .Testimonials {
     overflow: hidden;
     }
     .Testimonials__tweets {
-    margin-left: -48%;
-    width: 790px;
+    margin-left: -46%;
+    width: 800px;
     }
 
     /* SEKTORI QUESTIONNAIRES */
