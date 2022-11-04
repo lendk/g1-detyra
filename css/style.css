@@ -809,6 +809,7 @@ justify-content: center;
     .card-title {
     font-size: 12px;
       }
+     
     /* SEKTORI WE-PROVIDE */
     .we-provide{
         display: grid;
@@ -820,6 +821,20 @@ justify-content: center;
    .info__kolona{
     margin-left:40px;
    }
+   /* SEKTORI OUR TEAM*/ 
+   .our-team__icons{
+    grid-template-columns: 1fr 1fr;  
+    }
+    .our-team__icon{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .our-team__name{
+        margin-bottom: 0;
+    }
+    .our-team__position{
+        margin-bottom: 10px;
+    }
 
 
     /* SEKTORI TESTIMONIALS */
