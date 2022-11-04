@@ -170,19 +170,12 @@ table {
     text-align: center;
     color: #532C59;
 }
-.content-text__hidden {
-    width: 690px;
-    height: 46px;
+.content-text__hidden,
+.content-text__hiddenmobile{
     margin-top: -57px;
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    text-align: center;
-    color: #532C59;
     visibility: hidden;
 }
+
 .btn {
     font-family: 'Syne';
     font-style: normal;
@@ -751,18 +744,22 @@ justify-content: center;
     }
     .content-text__title {
         width: 230px;
-        height: 165px;
+        height: 150px;
         font-size: 40px;
         line-height: 56px;
         margin-left: -20px;
         text-align: center;
     }    
     .content-text__text {
+        visibility: hidden;
+    }
+    .content-text__hiddenmobile {
         width: 290px;
         height: 95px;
-        font-size: 11px;
-        line-height: 23px;
-        margin-top: 10px;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: -20px;
+        visibility: visible;
     }
     .btn {
         font-size: 13px;
@@ -771,7 +768,7 @@ justify-content: center;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: -50px;
+        margin-top: -25px;
     }
     .header-main__thirdshape {
         width: 65px;
