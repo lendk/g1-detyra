@@ -255,6 +255,7 @@ table {
   .site-container {
     margin: 2rem auto;
     max-width: 1156px;
+    width: 100%;
   }
   
   .article_container {
@@ -262,8 +263,6 @@ table {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
     align-items: center;
-   row-gap: 60px;
-   column-gap: 40px;
   }
   
   .article_image img {
@@ -350,7 +349,7 @@ table {
   line-height: 42px;
   text-align: center;
   color: #000000;
-margin-bottom: 40px;
+  margin-bottom: 40px;
   }
   
   .card-text {
@@ -404,7 +403,6 @@ margin-bottom: 40px;
   margin-left: 240px;
   text-align: center;
   color: #532C59;
-      
     }
 
 /* SEKTORI OUR-TEAM */
@@ -1111,7 +1109,8 @@ text-align: center;
      }
      /* SEKTORI COLLECTIONS */
      .article_image img {
-        max-width: 70%;
+        max-width: 50%;
+
       } 
     .article_container{
      gap: 1rem;   
