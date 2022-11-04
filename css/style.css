@@ -427,11 +427,6 @@ justify-content: center;
 }
 
 /* SEKTORI TESTIMONIALS */
-
-.test{
-    max-width: 1280px;
-}
-
 .Testimonials{
     margin-top: 60px;
     height: auto;
@@ -662,6 +657,27 @@ justify-content: center;
 
     /* SEKTORI TESTIMONIALS */
 
+    /* SEKTORI WE-PROVIDE */
+    .we-provide{
+        display: grid;
+        justify-content: center;
+    }
+   .info{
+    grid-template-columns: 1fr;
+   }
+   .info__kolona{
+    margin-left:40px;
+   }
+
+
+    /* SEKTORI TESTIMONIALS */
+    .Testimonials {
+    overflow: hidden;
+    }
+    .Testimonials__tweets {
+    margin-left: -54%;
+    width: 790px;
+    }
 
     /* SEKTORI QUESTIONNAIRES */
     .frequent-title h1 {
@@ -671,7 +687,7 @@ justify-content: center;
         text-align: center;
         padding-bottom: 20px;
     }
-    .container {
+    .test {
         padding-left: 20px;
         padding-right: 20px;
     }
