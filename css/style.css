@@ -235,10 +235,12 @@ table {
 
 /* START - MEDIA FOR HEADER AND MAIN */
 
-@media (min-width:768px) and (max-width:990px) {
+@media (min-width:768px) and (max-width:990px) { 
    body {
     max-width: 1440px;
+    
    }
+  
    .firstlist {
     visibility: hidden;
    }
@@ -304,6 +306,7 @@ table {
         width: 450px;
         height: 20px;
     }
+   
 }
 
 
@@ -318,16 +321,18 @@ table {
 }
 
 .our-team__icons {
-    display: flex;
-    gap: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .our-team__icon{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 110px 20px 110px;
+    margin-right:70px;
+    margin-left: 70px;
 }
+
 .our-team__title, .we-provide__title{
     font-family: 'Syne';
     font-style: normal;
@@ -389,13 +394,10 @@ table {
 }
 
 .info__kolona {
-    width: 301px;
+   
     padding: 16px;
 }
 
-.info__paragraph {
-    width: 269px;
-}
 
 .info__paragraph p {
 font-family: 'Space Grotesk';
@@ -570,11 +572,9 @@ justify-content: center;
         justify-content: center;
     }
    .info{
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
    }
-   .info__kolona{
-    margin-left:40px;
-   }
+   
 
 
     /* SEKTORI TESTIMONIALS */
