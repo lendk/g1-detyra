@@ -52,6 +52,7 @@ table {
     margin: 0 auto;
 }
 .header-flex {
+    width: 100%;
     height: 76px;
     display: flex;
     align-items: center;
@@ -60,11 +61,33 @@ table {
 .firstlist {
     width: 274px;
     height: 44px;
-    margin-left: 70px;
+    margin-left: 0px;
     padding: 12px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+}
+.hamburger {
+    width: 26px;
+    height: 20px;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    visibility: hidden;
+}
+.hamburger-span::after {
+   content: "";
+   width: 22px;
+   height: 3px;
+   background-color: black;
+   border-radius: 10px;
+   float: left;
+}
+.hamburger-links {
+    display: flex;
+    align-items: center;
 }
 .header-flex a {
     text-decoration: none;
@@ -76,7 +99,7 @@ table {
     opacity: 0.5;
 }
 .secondlist {
-    width: 315px;
+    width: 330px;
     height: 44px;
     margin-right: 70px;
     display: flex;
@@ -85,6 +108,7 @@ table {
 }
 .secondlist__link {
     text-decoration: none;
+    width: 102px;
 }
 .secondlist__link--arrow:after {
     content: "";
@@ -136,12 +160,12 @@ table {
     text-shadow: -5px 5px 0px #FFFFFF;
 }
 .content-text__text {
-    width: 650px;
-    height: 48px;
+    width: 690px;
+    height: 46px;
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     text-align: center;
     color: #532C59;
@@ -188,19 +212,107 @@ table {
     align-items: center;
     justify-content: center;
 }
+
 .logos {
-    width: 1100px;
+    width: 600px;
     height: 40px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-left: 50px;
+}
+.logos-second {
+    width: 600px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
-.ispum1 {
-    margin-left: 40px;
-}
+
+
+
 /* END - HEADER AND MAIN */
 
 /* START - MEDIA FOR HEADER AND MAIN */
+
+@media (min-width:768px) and (max-width:990px) { 
+   body {
+    max-width: 1440px;
+    
+   }
+  
+   .firstlist {
+    visibility: hidden;
+   }
+   /* .main-flex {
+    overflow: hidden;
+   } */
+   .firstlist,
+   .secondlist {
+    visibility: hidden;
+   }
+   
+   .hamburger {
+    visibility: visible;
+   }
+   .header__logo {
+    margin-left: -30px;
+   }
+   .header-main__firstshape {
+    left: -55px;
+   }
+   .header-main__secondshape {
+    left: -65px;
+    bottom: -20px;
+    width: 192px;
+    height: 193px;
+   }
+   .header-main__thirdshape {
+    top: -10px;
+    left: 655px;
+   }
+   .header-main__fourthshape {
+    left: 685px;
+    bottom: 10px;
+    width: 154px;
+    height: 154px;
+   }
+   .content {
+    width: 700px;
+    margin: 50px 292px 64px 30px;
+    }
+    .content-text {
+        width: 600px;
+        margin-bottom: 0;
+    }
+    .content-text__text {
+        width: 680px;
+        font-size: 13px;
+        line-height: 23px;
+    }
+    .btn {
+        font-size: 15px;
+        width: 110px;
+        height: 50px;
+        margin-top: -30px;
+    }
+    .all-logos {
+        flex-direction: column;
+        margin-top: -100px;
+        margin-bottom: 70px;
+    }
+    .logos {
+        width: 450px;
+        height: 20px;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+    .logos-second {
+        width: 450px;
+        height: 20px;
+    }
+   
+}
 
 
 
@@ -215,17 +327,19 @@ table {
 }
 
 .our-team__icons {
-    display: flex;
-    gap: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .our-team__icon{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 110px 20px 110px;
+    margin-right:70px;
+    margin-left: 70px;
 }
-.our-team__title{
+
+.our-team__title, .we-provide__title{
     font-family: 'Syne';
     font-style: normal;
     font-weight: 700;
@@ -236,8 +350,7 @@ table {
     margin-bottom: 24px;
 }
 
-.our-team__desc {
-    display: flex;
+.our-team__desc, .we-provide__desc p{
     align-items: center;
     font-family: 'Space Grotesk';
     font-style: normal;
@@ -250,7 +363,6 @@ table {
 }
 .our-team__name{
     width: 100%;
-    padding: 20px;
     display: flex;
     flex-direction: row;
     font-family: 'Space Grotesk';
@@ -262,6 +374,9 @@ table {
     color: #000000;
     margin-bottom: 12px;
 }
+.tmp{
+    padding: 20px;
+}
 .our-team__position{
     font-family: 'Space Grotesk';
     font-style: normal;
@@ -272,68 +387,54 @@ table {
     color: #532C59;
 
 }
-/* SECOND PART*/
+
+/*SEKTORI WE-PROVIDE */
+
 .we-provide {
-    display: flex;
-    
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 80px;
+    height: auto;
+}
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.we-provide__icons {
-    display: flex;
-    gap: 32px;
+.info__kolona {
+   
+    padding: 16px;
 }
 
-.we-provide__icon{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 110px 20px 110px;
+
+.info__paragraph p {
+font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 20px;
+color: #532C59;
+text-align: center;
 }
-.we-provide__title{
-    font-family: 'Syne';
+
+.info__header{
+    font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
-    line-height: 64px;
-    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
     color: #000000;
-   margin-bottom: 24px;
+    margin-bottom: 12px;
+    text-align: center;
 }
 
-.we-provide__desc {
-    display: flex;
-    align-items: center;
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    text-align: center;
-    color: #532C59;
-    margin-bottom: 40px;
-}
-.we-provide__position{
-    width: 50%;
-    font-family: 'Space Grotesk';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 20px;
-    color: #532C59;
+.info__image {
+display: flex;
+justify-content: center;
 }
 
 /* SEKTORI TESTIMONIALS */
-
-.test{
-    max-width: 1300px;
-}
-
 .Testimonials{
     margin-top: 60px;
-    height: 870px;
+    height: auto;
 }
 
 .Testimonials__title{
@@ -394,7 +495,8 @@ table {
 /* SEKTORI QUESTIONNAIRES */
 
 .questionnaires {
-    height: 600px;
+    margin-top: 70px;
+    height: auto;
 }
 
 .questionnaires__content {
@@ -412,7 +514,7 @@ table {
 }
 
 .frequent-title h1 {
-    padding-right: 40px;
+    padding-right: 20px;
 }
 
 .questions__wrapper {
@@ -451,10 +553,12 @@ table {
     cursor: pointer;
 }
 
-.questions__wrapper p{
+.questions__wrapper p {
     font-size: 14px;
 }
-.lastpage{
+
+/* SEKTORI FOOTER */
+.lastpage {
     height: 446px;
     max-width: 1300px;
     width: 100%;
@@ -478,22 +582,137 @@ table {
     font-style: normal;
 
 }
-.title{
-    font-family: Syne;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 64px;
-    letter-spacing: 0px;
-    
- }
- .size{
-    margin-left: 295px;
-    text-align: center;
-    width: 710px;
-    height: 48px;
-    gap:10px;
- }
- .btn-sell{
-    height: 46px;
-    width: 156px;
- }
+
+/* RESPONSIVE DESIGN */
+@media (max-width:767px) {
+    /* START-HEADER-MAIN */
+    .firstlist,
+    .secondlist {
+        visibility: hidden;
+    }
+    .hamburger {
+        visibility: visible;
+        margin-left: 15px;
+    }
+    .header__logo {
+        margin-left: -190px;
+    }
+    .main-flex {
+        height: 400px;
+    }
+    .header-main__firstshape {
+        width: 113px;
+        height: 114px;
+        top: 80px;
+        left: -50px;
+    }
+    .header-main__secondshape {
+        width: 122px;
+        height: 123px;
+        left: -29px;
+        bottom: 0;
+    }
+    .content {
+        width: 350px;
+        margin: 0;
+        margin-left: 35px;
+    }
+    .content-text {
+        width: 400px;
+    }
+    .content-text__title {
+        width: 230px;
+        height: 165px;
+        font-size: 40px;
+        line-height: 56px;
+        margin-left: -20px;
+        text-align: center;
+    }    
+    .content-text__text {
+        width: 290px;
+        height: 95px;
+        font-size: 11px;
+        line-height: 23px;
+        margin-top: 10px;
+    }
+    .btn {
+        font-size: 13px;
+        width: 107px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -50px;
+    }
+    .header-main__thirdshape {
+        width: 65px;
+        height: 67px;
+        left: 350px;
+        top: 5px;
+    }
+    .header-main__fourthshape {
+        width: 105px;
+        height: 105px;
+        left: 345px;
+        top: 280px;
+    }
+    .all-logos {
+        width: 390px;
+        flex-direction: column;
+        margin-top: -180px;
+    }
+    .logos,
+    .logos-second {
+        width: 350px;
+        height: 30px;
+        margin-left: 40px;
+    }
+    .logos img,
+    .logos-second img {
+        width: 90px;
+        height: 28px;
+    }
+     /* END-HEADER-MAIN */
+
+    /* SEKTORI TESTIMONIALS */
+
+    /* SEKTORI WE-PROVIDE */
+    .we-provide{
+        display: grid;
+        justify-content: center;
+    }
+   .info{
+    grid-template-columns: 1fr 1fr;
+   }
+   
+
+
+    /* SEKTORI TESTIMONIALS */
+    .Testimonials {
+    overflow: hidden;
+    }
+    .Testimonials__tweets {
+    margin-left: -54%;
+    width: 790px;
+    }
+
+    /* SEKTORI QUESTIONNAIRES */
+    .frequent-title h1 {
+        text-align: center;
+    }
+    .questions__frequent p {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .test {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .questionnaires__content {
+        grid-template-columns: 1fr;
+    }
+    .questions__wrapper {
+        width: auto;
+    }
+}
+

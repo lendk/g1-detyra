@@ -7,7 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
     <title>Landing Page</title>
 </head>
 <body>
@@ -16,6 +19,13 @@
     
         <header>
             <div class="container">
+
+            <div class="hamburger-links">
+            <div class="hamburger">
+                    <span class="hamburger-span"></span>
+                    <span class="hamburger-span"></span>
+                    <span class="hamburger-span"></span>
+            </div>
             <div class="header-flex">
             <div class="firstlist">
                 <a class="firstlist__link" href="#">Home</a>
@@ -31,6 +41,8 @@
                 <a class="secondlist__link" href="#">Resources</a>
             </div>
             </div>
+            </div>
+
             </div> 
         </header>
 
@@ -64,6 +76,8 @@
                 <div class="ispum1"><img src="./assets/logoispum1.svg" alt=""></div>
                 <div class="ispum2"><img src="./assets/logoispum2.svg" alt=""></div>
                 <div class="ispum3"><img src="./assets/logoispum3.svg" alt=""></div>
+            </div>
+            <div class="logos-second">
                 <div class="ui"><img src="./assets/zeus-ui.svg" alt=""></div>
                 <div class="ispum4"><img src="./assets/logoispum4.svg" alt=""></div>
                 <div class="ispum5"><img src="./assets/logoispum5.svg" alt=""></div>
@@ -74,67 +88,87 @@
     <!-- END - HEADER AND MAIN -->
 
 
-
-
-     <div class="container our-team">
-        <div class="our-team__title">Our Team</div>
-        <div class="our-team__desc">Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in elit.<Br> Morbi rhoncus, tellus, eros consequat magna semper orci a tincidunt. </div>
-        <div class="our-team__icons">
-            <div class="our-team__icon">
-               <img src="./assets/icon1.svg" alt="icon1">
-               <h6 class="our-team__name">Guy Hawkins</h6>
-               <p class="our-team__position">CEO</p>
-            </div>
-            <div class="our-team__icon">
-                <img src="./assets/icon2.svg" alt="icon1">
-                <h6 class="our-team__name">Jane Cooper</h6>
-                <p class="our-team__position">COO</p>
-            </div>
-            <div class="our-team__icon">
-                <img src="./assets/icon3.svg" alt="icon1">
-                <h6 class="our-team__name">Darrell Steward</h6>
-                <p class="our-team__position">CTO</p>
-            </div>
-            <div class="our-team__icon">
-                <img src="./assets/icon4.svg" alt="icon1">
-                <h6 class="our-team__name">Dianne Russell</h6>
-                <p class="our-team__position">CDO</p>
-            </div>
+ <!-- START - OUR-TEAM -->
+ <div class="container our-team">
+    <div class="our-team__title">Our Team</div>
+    <div class="our-team__desc">Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in elit.<Br> Morbi rhoncus, tellus, eros consequat magna semper orci a tincidunt. </div>
+    <div class="our-team__icons">
+        <div class="our-team__icon">
+           <img src="./assets/icon1.svg" alt="icon1">
+           <h6 class="our-team__name tmp">Guy Hawkins</h6>
+           <p class="our-team__position">CEO</p>
         </div>
-     </div>
-
-     <div class="container we-provide">
-        <div class="we-provide__title">We Provide</div>
-        <div class="we-provide__desc">Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat scelerisque in elit. Morbi rhoncus, tellus, eros consequat magna semper orci a tincidunt. </div>
-        <div class="we-provide__icons">
-            <div class="we-provide__icon">
-               <img src="./assets/second-icons1.svg" alt="icon1">
-               <h6 class="we-provide__name">Host your NFTs</h6>
-               <p class="we-provide__position">Egestas tellus nunc proin amet tellus<br>
-                 tincidunt lacus consequat. Ultrices</p>
-            </div>
-            <div class="we-provide__icon">
-                <img src="./assets/second-icons2.svg" alt="icon1">
-                <h6 class="we-provide__name">See your sales</h6>
-                <p class="we-provide__position">Integer ante non nunc, eget est justo<br> vel semper nunc. Lacus </p>
-            </div>
-            <div class="we-provide__icon">
-                <img src="./assets/second-icons3.svg" alt="icon1">
-                <h6 class="we-provide__name">Secure wallet</h6>
-                <p class="we-provide__position">Sed faucibus faucibus egestas<br> volutpat, accumsan adipiscing egestas<br> est. Auctor et leo urna est.</p>
-            </div>
-            <div class="we-provide__icon">
-                <img src="./assets/second-icons4.svg" alt="icon1">
-                <h6 class="we-provide__name">No scam</h6>
-                <p class="we-provide__position">Sed faucibus faucibus egestas<br> volutpat, accumsan adipiscing egestas<br> est. Auctor et leo urna est.</p>
-            </div>
+        <div class="our-team__icon">
+            <img src="./assets/icon2.svg" alt="icon1">
+            <h6 class="our-team__name tmp">Jane Cooper</h6>
+            <p class="our-team__position">COO</p>
         </div>
-     </div>
+        <div class="our-team__icon">
+            <img src="./assets/icon3.svg" alt="icon1">
+            <h6 class="our-team__name tmp">Darrell Steward</h6>
+            <p class="our-team__position">CTO</p>
+        </div>
+        <div class="our-team__icon">
+            <img src="./assets/icon4.svg" alt="icon1">
+            <h6 class="our-team__name tmp">Dianne Russell</h6>
+            <p class="our-team__position">CDO</p>
+        </div>
+    </div>
+ </div>
+ <!-- END - OUR-TEAM -->
+ <!-- START - WE-PROVIDE -->
 
-         
+<div class="container we-provide">
+<div class="we-provide__title">
+<h1>We Provide</h1>
+</div>
+<div class="we-provide__desc">
+<p>Risus commodo id odio turpis pharetra elementum. Pulvinar porta porta feugiat <br>scelerisque in elit. Morbi rhoncus, tellus, eros consequat magna semper orci a tincidunt. </p>
+</div>
+
+<div class="info">
+<div class="info__kolona">
+    <div class="info__image">
+    <img src="./assets/second-icons1.svg" alt=""></div>
+    <div class="info__header">
+    <h2>Host your NFTs</h2></div>
+    <div class="info__paragraph">
+    <p>Egestas tellus nunc proin amet tellus tincidunt lacus consequat. Ultrices</p></div>
+</div>
+
+<div class="info__kolona">
+    <div class="info__image">
+    <img src="./assets/second-icons1.svg" alt=""></div>
+    <div class="info__header">
+    <h2>See your sales</h2></div>
+    <div class="info__paragraph">
+    <p>Integer ante non nunc, eget est justo vel semper nunc. Lacus </p></div>
+</div>
+
+<div class="info__kolona">
+    <div class="info__image">
+    <img src="./assets/second-icons1.svg" alt=""></div>
+    <div class="info__header">
+    <h2>Secure wallet</h2></div>
+    <div class="info__paragraph">
+    <p>Sed faucibus faucibus egestas volutpat, accumsan adipiscing egestas est. Auctor et leo urna est. </p></div>
+</div>
+
+<div class="info__kolona">
+    <div class="info__image">
+    <img src="./assets/second-icons1.svg" alt=""></div>
+    <div class="info__header">
+    <h2>No scam</h2></div>
+    <div class="info__paragraph">
+        <p>Sed faucibus faucibus egestas volutpat, accumsan adipiscing egestas est. Auctor et leo urna est. </p></div>
+</div>
+</div>
+</div>
+
+<!-- END - WE-PROVIDE   -->
 <!-- START - SEKTORI TESTIMONIALS  -->
 
-<div class="container test">
+<div class="container">
 
     <div class="Testimonials">
     <div class="Testimonials__title">
@@ -270,6 +304,7 @@
     <!-- END - SEKTORI TESTIMONIALS -->
     <!-- START - SEKTORI QUESTIONNAIRES -->
     
+    <div class="test">
     <div class="questionnaires">
     <div class="questionnaires__content">
     
@@ -340,7 +375,9 @@
     </div>
     </div>
     </div>
+</div>
     <!-- END - SEKTORI QUESTIONS -->
+    <!-- START - SEKTORI FOOTER-->
 <div class="container lastpage">
     <div class="text">
     <h1 class="title">
@@ -352,5 +389,6 @@
     <button class="btn btn-sell">Sell right now</button>
     </div>
 </div>
+    <!-- END - SEKTORI FOOTER -->
     </body>
     </html>
