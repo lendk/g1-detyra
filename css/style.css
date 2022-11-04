@@ -170,6 +170,19 @@ table {
     text-align: center;
     color: #532C59;
 }
+.content-text__hidden {
+    width: 690px;
+    height: 46px;
+    margin-top: -57px;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #532C59;
+    visibility: hidden;
+}
 .btn {
     font-family: 'Syne';
     font-style: normal;
@@ -952,6 +965,10 @@ margin-bottom: 20px;
          width: 680px;
          font-size: 13px;
          line-height: 23px;
+         visibility: hidden;
+     }
+     .content-text__hidden {
+        visibility: visible;
      }
      .btn {
          font-size: 15px;
