@@ -552,6 +552,7 @@ justify-content: center;
     line-height: 64px;
     text-align: center;
     color: #000000;
+    margin-bottom: 24px;
 }
 
 .we-provide__desc p {
@@ -565,6 +566,9 @@ justify-content: center;
     color: #532C59;
 }
 /* SEKTORI TESTIMONIALS */
+.ct1 {
+    max-width: 1270px;
+}
 .Testimonials{
     margin-top: 60px;
     height: auto;
@@ -635,9 +639,14 @@ justify-content: center;
 .questionnaires__content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 32px;
+    column-gap: 20px;
 }
 
+.row2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
 .questions__frequent h1 {
     padding-bottom: 20px;
     font-family: 'Syne';
@@ -647,9 +656,11 @@ justify-content: center;
 }
 
 .frequent-title h1 {
-    padding-right: 20px;
+    padding-right: 40px;
 }
-
+.frequent-title{
+    width: 412px;
+}
 .questions__wrapper {
     border: 1px solid #D6BCFA;
     border-radius: 15px;
@@ -903,16 +914,22 @@ justify-content: center;
     margin-left: -46%;
     width: 800px;
     }
+    .tweet__username{
+        font-size: 14px;
+      }
 
     /* SEKTORI QUESTIONNAIRES */
     .frequent-title h1 {
         text-align: center;
     }
-    .questions__frequent p {
+    .frequent-content p {
         text-align: center;
         padding-bottom: 20px;
     }
-    .test {
+    .frequent-content{
+     width: 380px;
+    }
+    .test{
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -922,12 +939,18 @@ justify-content: center;
     .questions__wrapper {
         width: auto;
     }
+    .row2{
+        grid-template-columns: 1fr;
+    }
+    .questions__wrapper{
+        width: 370px;
+     }
 }
 
 @media (min-width:768px) and (max-width:1024px) {
     .test {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     /* START-HEADER-MAIN */
     body {
@@ -1008,8 +1031,47 @@ justify-content: center;
          height: 20px;
      }
      /* SEKTORI OUR TEAM */
-     .our-team__icon{
+     .our-team__icon {
         margin-right: 40px;
         margin-left: 40px;
+     }
+     .our-team__desc {
+        width: 700px;
+     }
+
+     /* SEKTORI WE PROVIDE */
+     .we-provide__desc {
+        width: 500px;
+     }
+     .info {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+     }
+     /* SEKTORI TESTIMONIALS */
+     .test1{
+        padding-left: 15px;
+        padding-right: 15px;
+     }
+     .tweet__username{
+       font-size: 14px;
+     }
+     /* SEKTORI QUESTIONNAIRES */
+     .questionnaires__content{
+        grid-template-columns: 1fr 1fr;
+    }
+
+     .questions__wrapper{
+        width: 350px;
+     }
+     .frequent-title h1{
+        font-size: 37px;
+        padding: 0px;
+     }
+     .frequent-title{
+        width: 300px;
+        margin-right: -40px;
+     }
+     .row2{
+        grid-template-columns: 1fr;
      }
  }
