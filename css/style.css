@@ -236,7 +236,7 @@ table {
 /* START COLLECTION */
 
 
-body {
+.Collections {
     /* height: 100vh; */
     font-size: 100%;
     font-size: 16px;
@@ -411,34 +411,6 @@ body {
   flex-grow: 1;
       
     }
-    
-    
-  
-  @media screen and (max-width: 768px) {
-  
-      .platform__main--title {
-          font-size:30px;
-        }
-  
-      .platform__main--text {
-          font-size:14px;
-          padding-right:0;
-          padding-left:0;
-        }
-       main {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-  
-      .article_container {
-       grid-template-columns: repeat(1, minmax(300px, 1fr));
-        }
-  
-      .card-title {
-      font-size: 12px;
-        }
-  }
 
   /*END COLLECTION*/
 /* START - OUR-TEAM */
@@ -817,6 +789,26 @@ justify-content: center;
         height: 28px;
     }
      /* END-HEADER-MAIN */
+     /* SEKTORI COLLECTIONS */
+     .platform__main--title {
+        font-size:30px;
+      }
+    .platform__main--text {
+        font-size:14px;
+        padding-right:0;
+        padding-left:0;
+      }
+     main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    .article_container {
+     grid-template-columns: repeat(1, minmax(300px, 1fr));
+      }
+    .card-title {
+    font-size: 12px;
+      }
     /* SEKTORI WE-PROVIDE */
     .we-provide{
         display: grid;
