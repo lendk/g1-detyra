@@ -821,6 +821,9 @@ justify-content: center;
    .info__kolona{
     margin-left:40px;
    }
+   .we-provide__desc p{
+margin-bottom: 20px;
+   }
    /* SEKTORI OUR TEAM*/ 
    .our-team__icons{
     grid-template-columns: 1fr 1fr;  
@@ -842,7 +845,7 @@ justify-content: center;
     overflow: hidden;
     }
     .Testimonials__tweets {
-    margin-left: -54%;
+    margin-left: -48%;
     width: 790px;
     }
 
