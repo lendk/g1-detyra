@@ -425,6 +425,7 @@ table {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
 }
 
 .our-team__icons {
@@ -439,7 +440,7 @@ table {
     margin-right: 70px;
     margin-left: 70px;
 }
-.our-team__title, .we-provide__title{
+.our-team__title{
     font-family: 'Syne';
     font-style: normal;
     font-weight: 700;
@@ -450,7 +451,7 @@ table {
     margin-bottom: 24px;
 }
 
-.our-team__desc, .we-provide__desc p{
+.our-team__desc p{
     align-items: center;
     font-family: 'Space Grotesk';
     font-style: normal;
@@ -461,6 +462,10 @@ table {
     color: #532C59;
     margin-bottom: 80px;
 }
+.our-team__desc{
+    width: 770px;
+}
+
 .our-team__name{
     width: 100%;
     display: flex;
@@ -491,7 +496,7 @@ table {
 /*SEKTORI WE-PROVIDE */
 
 .we-provide {
-    margin-top: 80px;
+    margin-top: 60px;
     height: auto;
 }
 .info {
@@ -534,6 +539,30 @@ display: flex;
 justify-content: center;
 }
 
+.we-provide__desc {
+    width: 770px;
+}
+
+.we-provide__title {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-align: center;
+    color: #000000;
+}
+
+.we-provide__desc p {
+    align-items: center;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #532C59;
+}
 /* SEKTORI TESTIMONIALS */
 .Testimonials{
     margin-top: 60px;
@@ -880,6 +909,11 @@ margin-bottom: 20px;
 }
 
 @media (min-width:768px) and (max-width:1024px) {
+    .test {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    /* START-HEADER-MAIN */
     body {
      max-width: 1440px;
     }
@@ -953,5 +987,10 @@ margin-bottom: 20px;
      .logos-second {
          width: 450px;
          height: 20px;
+     }
+     /* SEKTORI OUR TEAM */
+     .our-team__icon{
+        margin-right: 40px;
+        margin-left: 40px;
      }
  }
