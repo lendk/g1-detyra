@@ -463,5 +463,24 @@ table {
     border-radius: 60px;
     border: 1px solid #D6BCFA;
     box-shadow: inset 0px 0px 50px #F8E0FA;
+    text-align: center;
 
 }
+.text{
+
+    text-align: center;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-top: 117px;
+    font-family: 'Syne';
+    font-style: normal;
+}
+.title{
+    font-family: Syne;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0px;
+ }
