@@ -918,11 +918,14 @@ justify-content: center;
     .frequent-title h1 {
         text-align: center;
     }
-    .questions__frequent p {
+    .frequent-content p {
         text-align: center;
         padding-bottom: 20px;
     }
-    .test {
+    .frequent-content{
+     width: 380px;
+    }
+    .test{
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -932,6 +935,12 @@ justify-content: center;
     .questions__wrapper {
         width: auto;
     }
+    .row2{
+        grid-template-columns: 1fr;
+    }
+    .questions__wrapper{
+        width: 370px;
+     }
 }
 
 @media (min-width:768px) and (max-width:1024px) {
@@ -1049,6 +1058,7 @@ justify-content: center;
      }
      .frequent-title h1{
         font-size: 37px;
+        padding: 0px;
      }
      .frequent-title{
         width: 300px;
