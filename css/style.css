@@ -239,10 +239,7 @@ table {
 
 
 /* END - HEADER AND MAIN */
-
-/* START COLLECTION */
-
-
+/* SEKTORI COLLECTIONS  */
 .Collections {
     /* height: 100vh; */
     font-size: 16px;
@@ -266,6 +263,7 @@ table {
     grid-template-columns: repeat(3, minmax(300px, 1fr));
     align-items: center;
    row-gap: 60px;
+   column-gap: 40px;
   }
   
   .article_image img {
@@ -409,8 +407,8 @@ margin-bottom: 40px;
       
     }
 
-  /*END COLLECTION*/
-/* START - OUR-TEAM */
+/* SEKTORI OUR-TEAM */
+
 .our-team {
     display: flex;
     flex-direction: column;
@@ -428,8 +426,8 @@ margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 70px;
-    margin-left: 70px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 .our-team__title{
     font-family: 'Syne';
@@ -556,6 +554,7 @@ justify-content: center;
     color: #532C59;
 }
 /* SEKTORI TESTIMONIALS */
+
 .ct1 {
     max-width: 1270px;
 }
@@ -692,6 +691,7 @@ justify-content: center;
 }
 
 /* SEKTORI NFT */
+
 .lastpage {
     height: 446px;
     max-width: 1300px;
@@ -745,6 +745,7 @@ text-align: center;
 }
 
 /* SEKTORI FOOTER */
+
 .footer {
     margin-top: 30px;
     margin-left: 30px;
@@ -780,6 +781,7 @@ text-align: center;
   }
   
 /* RESPONSIVE DESIGN */
+
 @media (max-width:767px) {
     /* START-HEADER-MAIN */
     .firstlist,
@@ -933,7 +935,7 @@ text-align: center;
     margin-top: 0px;
    }
 
-   /* SEKTORI OUR TEAM*/ 
+   /* SEKTORI OUR TEAM */ 
    .our-team__icons{
     grid-template-columns: 1fr 1fr;  
     margin-right: -20px;
@@ -992,6 +994,29 @@ text-align: center;
     }
     .questions__wrapper{
         width: 370px;
+     }
+     /* SEKTORI NFT + FOOTER */
+     .geo {
+        display: none;
+     }
+     .content1__title h1 {
+        margin-top: 50px;
+        font-size: 45px;
+     }
+     .btn--sell{
+        margin-left: 130px;
+        margin-top: 20px;
+        width: 150px;
+     }
+     .content1__para{
+        width: 350px;
+        margin-left: 20px;
+     }
+     .header__logo1{
+        margin-left: -60px;
+     }
+     .footer__line{
+        margin-left: 30px;
      }
 }
 
@@ -1149,5 +1174,37 @@ text-align: center;
      }
      .row2{
         grid-template-columns: 1fr;
+     }
+      /* SEKTORI NFT + FOOTER*/
+    .content1__title {
+        width: 300px;
+        margin-left: 250px;
+    }
+    .content1__para{
+        width: 300px;
+        margin-left: 250px;
+    }
+     .content1__title h1 {
+       font-size: 34px;
+       line-height: 50px;
+       margin-top: -330px;
+     }
+     .btn--sell{
+        margin-left: 320px;
+        margin-top: 20px;
+        width: 150px;
+     }
+     .content1__para{
+    
+     }
+     .header__logo1{
+        margin-left: -60px;
+     }
+     .footer__line{
+        margin-left: 30px;
+     }
+     .geo img{
+        margin-top: 20px;
+        width: 30%;
      }
  }
