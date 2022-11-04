@@ -235,14 +235,9 @@ table {
 
 /* START - MEDIA FOR HEADER AND MAIN */
 
-@media (min-width:768px) and (max-width:990px) { 
+@media (min-width:768px) and (max-width:990px) {
    body {
     max-width: 1440px;
-    
-   }
-  
-   .firstlist {
-    visibility: hidden;
    }
    /* .main-flex {
     overflow: hidden;
@@ -311,7 +306,6 @@ table {
         width: 450px;
         height: 20px;
     }
-   
 }
 
 
@@ -335,10 +329,9 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right:70px;
+    margin-right: 70px;
     margin-left: 70px;
 }
-
 .our-team__title, .we-provide__title{
     font-family: 'Syne';
     font-style: normal;
@@ -400,10 +393,13 @@ table {
 }
 
 .info__kolona {
-   
+    width: 301px;
     padding: 16px;
 }
 
+.info__paragraph {
+    width: 269px;
+}
 
 .info__paragraph p {
 font-family: 'Space Grotesk';
@@ -558,7 +554,7 @@ justify-content: center;
 }
 
 /* SEKTORI FOOTER */
-.lastpage {
+.lastpage{
     height: 446px;
     max-width: 1300px;
     width: 100%;
@@ -582,6 +578,25 @@ justify-content: center;
     font-style: normal;
 
 }
+.title{
+    font-family: Syne;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0px;
+    
+ }
+ .size{
+    margin-left: 295px;
+    text-align: center;
+    width: 710px;
+    height: 48px;
+    gap:10px;
+ }
+ .btn-sell{
+    height: 46px;
+    width: 156px;
+ }
 
 /* RESPONSIVE DESIGN */
 @media (max-width:767px) {
@@ -682,9 +697,11 @@ justify-content: center;
         justify-content: center;
     }
    .info{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
    }
-   
+   .info__kolona{
+    margin-left:40px;
+   }
 
 
     /* SEKTORI TESTIMONIALS */
@@ -715,4 +732,3 @@ justify-content: center;
         width: auto;
     }
 }
-
