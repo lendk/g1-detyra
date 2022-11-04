@@ -961,12 +961,17 @@ justify-content: center;
     body {
      max-width: 1440px;
     }
-    /* .main-flex {
+   .header-flex {
+    width: 90%;
+   }
+    .main-flex {
      overflow: hidden;
-    } */
+     margin-top: 0;
+    }
     .firstlist,
     .secondlist {
      visibility: hidden;
+     width: 150px;
     }
     
     .hamburger {
@@ -993,7 +998,7 @@ justify-content: center;
     }
     .header-main__fourthshape {
      left: 685px;
-     bottom: 10px;
+     bottom: 20px;
      width: 154px;
      height: 154px;
     }
@@ -1022,18 +1027,19 @@ justify-content: center;
      }
      .all-logos {
          flex-direction: column;
-         margin-top: -100px;
+         height: 100px;
+         margin-top: -120px;
          margin-bottom: 70px;
      }
      .logos {
          width: 450px;
-         height: 20px;
+         height: 30px;
          margin-left: 10px;
-         margin-bottom: 30px;
+         margin-bottom: 15px;
      }
      .logos-second {
          width: 450px;
-         height: 20px;
+         height: 30px;
      }
      /* SEKTORI COLLECTIONS */
      .article_image img {
