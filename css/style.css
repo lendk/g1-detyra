@@ -95,6 +95,7 @@ img{
     align-items: center;
 }
 .header-flex a {
+    font-family: 'Space Grotesk';
     text-decoration: none;
     margin-right: 35px;
     font-weight: 500;
@@ -104,6 +105,7 @@ img{
     opacity: 0.5;
 }
 .secondlist {
+    font-family: 'Space Grotesk';
     width: 330px;
     height: 44px;
     margin-right: 70px;
