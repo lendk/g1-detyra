@@ -131,7 +131,7 @@ img{
 .main-flex {
     width: 100%;
     height: 500px;
-    margin-top: 28px;
+    margin-top: 10px;
     margin-bottom: 46px;
     display: inline-block;
     position: relative;
@@ -154,13 +154,13 @@ img{
     flex-wrap: wrap;
 }
 .content-text__title {
-    width: 600px;
-    height: 192px;
+    width: 750px;
+    height: 172px;
     font-family: 'Syne';
     font-style: normal;
     font-weight: 700;
     font-size: 80px;
-    line-height: 96px;
+    line-height: 86px;
     text-align: center;
     color: #000000;
     text-shadow: -5px 5px 0px #FFFFFF;
@@ -168,6 +168,7 @@ img{
 .content-text__text {
     width: 690px;
     height: 46px;
+    margin-top: 10px;
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 400;
@@ -688,7 +689,7 @@ text-align: center;
         width: 121px;
     }
     .main-flex {
-        margin-top: 0;
+        margin-top: -10px;
         height: 400px;
     }
     .header-main__firstshape {
@@ -712,10 +713,10 @@ text-align: center;
         width: 400px;
     }
     .content-text__title {
-        width: 230px;
+        width: 288px;
         height: 150px;
-        font-size: 40px;
-        line-height: 56px;
+        font-size: 36px;
+        line-height: 55px;
         text-align: center;
     }    
     .content-text__text {
@@ -944,8 +945,15 @@ text-align: center;
      margin: 50px 292px 64px 30px;
      }
      .content-text {
-         width: 600px;
+         width: 650px;
          margin-bottom: 0;
+     }
+     .content-text__title {
+        width: 700px;
+        height: 170px;
+        margin-right: 0;
+        margin-left: 0;
+        font-size: 72px;
      }
      .content-text__text {
          width: 680px;
