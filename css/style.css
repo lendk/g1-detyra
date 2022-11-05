@@ -46,6 +46,11 @@ table {
   box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+  }
+
 .container {
     max-width: 1440px;
     width: 100%;
@@ -235,176 +240,60 @@ table {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
-
-
-
 /* END - HEADER AND MAIN */
 /* SEKTORI COLLECTIONS  */
-.Collections {
-    /* height: 100vh; */
+.our-team__desc1 p{
+    width: 850px;
+    margin-left: 300px;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
-    background: #fff;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .site-container {
-    margin: 2rem auto;
-    max-width: 1156px;
-    width: 100%;
-  }
-  
-  .article_container {
-    background-color: #fff;
+    line-height: 24px; 
+    text-align: center;
+    color: #532C59;
+}
+.collections__kolona {
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
-    align-items: center;
-  }
-  
-  .article_image img {
-    max-width: 90%;
-  }
-  
-  .article_content {
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+    row-gap: 30px;
+    column-gap: 30px;
+    margin-bottom: 50px;
+}
+.kolona__titulli {
+text-align: center;
+font-family: 'Syne';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 42px;
+color: #000000;
+padding-left: 50px;
+padding-right: 50px;
+}
+.kolona__content{
+text-align: center;
+font-family: 'Space Grotesk';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+color: #532C59;
+padding-left: 30px;
+padding-right: 30px;
+}
+.our-team__title1 {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
     text-align: center;
-  }
-  
-  .article_card {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  figure {
-    height: 70%;
-  }
-  
-  .article_content {
-    height: 30%;
-  }
-  
-  .article_image {
-    text-align: center;
-  }
-  
-  /* .article-image {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
-  
-  figure {
-    max-width: 200px;
-  }
-  
-  .article-image img {
-    /* max-width:100%;*/
-  /* height: auto;
-    border-radius: 20px 20px 0 0;
-  }
-  
-  .article-card {
-    /* background: white; 
-    border-radius: 20px;
-    transition: 0.3s;
-  }
-  
-  .article-card:hover {
-    cursor: pointer;
-  }
-  
-  .article-content {
-    padding: 2rem;
-  }
-  
-  .article-content .card-category {
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 600;
-    color: black;
-    display: block;
-    text-decoration: none;
-  }
-  
-  .article-content .card-title {
-    margin: 1rem 0;
-    color: #22447b;
-  }
-  */
-  
-  .card-title  {
-  width: 412px;
-  height: 42px;
-  margin-bottom: 29px;
-  margin-left:-30px;
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 42px;
-  text-align: center;
-  color: #000000;
-  margin-bottom: 40px;
-  }
-  
-  .card-text {
-  color: #532c59;
-  width: 350px;
-  margin-left: 20px;
-  }
-  
-  .article-content .card-text {
-  width: 412px;	
-  height: 40px;
-  margin-top:  30px;
-  font-family: "Space Grotesk";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px; 
-  text-align: center;  
-  color: #532c59;
-    } 
-    
-   .platform__main--title {
-  width: 1300px;
-  height: 64px;
-  font-family: 'Syne';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 64px;
-  /* identical to box height, or 133% */
-  text-align: center;
-  margin-bottom:16px;
-  color: #000000;  
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-   }
-    
-   .platform__main--text {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 820px;
-  height: 48px;
-  font-family: 'Space Grotesk';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  margin-left: 240px;
-  text-align: center;
-  color: #532C59;
-    }
-
+    color: #000000;
+    margin-bottom: 24px;
+    font-size: 40px;
+ }
 /* SEKTORI OUR-TEAM */
 
 .our-team {
@@ -626,13 +515,13 @@ justify-content: center;
 .questionnaires__content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
+    column-gap: 25px;
 }
 
 .row2{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
+    column-gap: 25px;
 }
 .questions__frequent h1 {
     padding-bottom: 20px;
@@ -815,9 +704,9 @@ text-align: center;
         bottom: 0;
     }
     .content {
-        width: 350px;
+        width: 300px;
         margin: 0;
-        margin-left: 35px;
+        margin-left: 55px;
     }
     .content-text {
         width: 400px;
@@ -827,7 +716,6 @@ text-align: center;
         height: 150px;
         font-size: 40px;
         line-height: 56px;
-        margin-left: -20px;
         text-align: center;
     }    
     .content-text__text {
@@ -857,9 +745,9 @@ text-align: center;
         top: 5px;
     }
     .header-main__fourthshape {
-        width: 105px;
-        height: 105px;
-        left: 345px;
+        width: 85px;
+        height: 85px;
+        left: 340px;
         top: 280px;
     }
     .all-logos {
@@ -870,9 +758,9 @@ text-align: center;
     }
     .logos,
     .logos-second {
-        width: 350px;
+        width: 250px;
         height: 30px;
-        margin-left: 40px;
+        margin-left: -10px;
     }
     .logos img,
     .logos-second img {
@@ -881,37 +769,20 @@ text-align: center;
     }
      /* END-HEADER-MAIN */
      /* SEKTORI COLLECTIONS */
-     .platform__main--title {
-        font-size:30px;
-      }
-    .platform__main--text {
-        font-size:14px;
-        padding-right:0;
-        padding-left:0;
-        width: 300px;
-        margin-left: 500px;
-        margin-bottom: 100px;
-      }
-    
-    .article_container {
-     grid-template-columns: repeat(1, minmax(300px, 1fr));
-      }
-    .card-title {
-        width: 300px;
-        margin-left: 430px;
-        margin-bottom: 20px;
-      }
-      .p{
-        margin-bottom: 60px;
-      }
-      .article_image img {
-        width: 30%;
-      } 
-      .card-text{
-        font-size:14px;
-        width: 300px;
-        margin-left: 430px;
-      }
+     .collections__kolona {
+        grid-template-columns: 1fr;
+     }
+     .our-team__desc1 p{
+     width: 300px;
+     margin-left: 40px;
+     }
+     .kolona__image{
+        width:95%;
+        margin-left: 10px;
+     }
+     .kolona__titulli {
+        font-size: 30px;
+     }
     /* SEKTORI WE-PROVIDE */
    .we-provide{
         display: grid;
@@ -969,10 +840,12 @@ text-align: center;
     /* SEKTORI QUESTIONNAIRES */
     .frequent-title h1 {
         text-align: center;
+        margin-left: 20px;
     }
     .frequent-content p {
-        text-align: center;
-        padding-bottom: 20px;
+    margin-left: 40px;
+text-align: center;
+    padding-bottom: 20px;
     }
     .frequent-content{
      width: 380px;
@@ -985,14 +858,12 @@ text-align: center;
         grid-template-columns: 1fr;
     }
     .questions__wrapper {
-        width: auto;
+        width: 370px;
+        margin-left: 25px;
     }
     .row2{
         grid-template-columns: 1fr;
     }
-    .questions__wrapper{
-        width: 370px;
-     }
      /* SEKTORI NFT + FOOTER */
      .geo {
         display: none;
@@ -1108,28 +979,24 @@ text-align: center;
          height: 30px;
      }
      /* SEKTORI COLLECTIONS */
-     .article_image img {
-        max-width: 50%;
-
-      } 
-    .article_container{
-     gap: 1rem;   
-    }
-    .platform__main--text{
-    width: 50%;
-    margin-left: 330px;
-    font-size: 15px;
-    }
-    .card-title{
-        width: 200px;
-        line-height: 30px;
-        margin-left: 100px;
-        font-size: 24px;
-    }
-    .card-text{
-        width: 300px;
-     padding-left: 60px;
-    }
+  .kolona__image img{
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .kolona__titulli{
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  .our-team__desc1 p{
+    margin-left: 30px;
+    width: 700px;
+  }
+  .collections__kolona{
+    margin-left: 20px;
+  }
      /* SEKTORI OUR TEAM */
      .our-team__icon {
         margin-right: 40px;
@@ -1192,9 +1059,6 @@ text-align: center;
         margin-left: 320px;
         margin-top: 20px;
         width: 150px;
-     }
-     .content1__para{
-    
      }
      .header__logo1{
         margin-left: -60px;
