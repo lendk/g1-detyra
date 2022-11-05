@@ -106,7 +106,7 @@ img{
 }
 .secondlist {
     font-family: 'Space Grotesk';
-    width: 330px;
+    width: 381px;
     height: 44px;
     margin-right: 70px;
     padding: 12px;
@@ -121,7 +121,7 @@ img{
 .secondlist__link--arrow:after {
     content: "";
     background: url(../assets/arrow-down.svg) no-repeat center;
-    width: 20px;
+    width: 36px;
     height: 20px;
     float: right;
 }
